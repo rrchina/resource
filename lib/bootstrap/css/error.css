@@ -1,0 +1,6 @@
+﻿body {
+    font-size:14px; margin:0px; padding:0px;color:#000;
+}
+.error_box { width:80%; margin-left:auto; margin-right:auto; margin-top:150px; height:auto; border-radius:5px; border:#ddd solid 1px; background:#fff; }
+.error_box .error_title { width:100%; height:auto; line-height:30px; border-bottom:#ddd solid 1px; font-size:20px; background:#fafafa; padding:8px 0; text-align:center; font-weight:800; color:red; }
+.error_box .error_content { width:100%; height:auto; line-height:28px; font-size:14px; text-align:left; color:#666; padding:20px 10px; }

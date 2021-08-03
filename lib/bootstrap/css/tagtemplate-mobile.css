@@ -1,0 +1,74 @@
+﻿/*
+ *
+ *   电子标签模板设计框架
+ *   version 1.0
+ *
+*/
+
+.tag_tool_box {
+	background:#fff; padding:8px 0 3px 8px;
+}
+
+.tag_preview_box {
+	padding:10px; text-align:center; background:#f2f2f2;
+}
+
+    .tag_preview_box img {
+        max-width:100%;
+    }
+
+.tag_tab_box {
+	background:#fff; padding:5px;
+}
+
+.tag_tools_item {
+        min-height:30px; padding-bottom:8px; min-width:100px; max-width:300px; margin-right:10px; display:inline-block;
+    }
+
+.tag_tools_item label {
+        margin-top:0; margin-bottom:0; padding-bottom:5px;
+    }
+
+.tag_tools_item .btn {
+        margin-top:0; margin-bottom:0;
+    }
+
+.tag_listbox_left { float:left;overflow:hidden; position:relative; }
+.tag_listbox_right { float:right; width:100px; height:auto; margin-top:5px; background:#fff; text-align:right; padding-top:0px; }
+
+.input-group-prepend2 {
+        background: #f8f8f8;
+    }
+
+.input-group .btn {
+margin:auto 2px;
+}
+
+    .nav-tabs2 li { min-width:120px; width:auto; white-space : nowrap; border-bottom:none; text-align:center; }
+    .nav-tabs2 li a { min-width:120px; width:auto; white-space : nowrap; }
+
+    .nav-tabs2 > li > a, .nav-tabs > li > a:hover, .nav-tabs2 > li > a:focus {
+        border-bottom: #fff solid 1px;white-space : nowrap;
+    }
+
+        .nav-tabs2 > li.active > a, .nav-tabs2 > li.active > a:hover, .nav-tabs2 > li.active > a:focus {
+            white-space : nowrap;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background: none;
+        border-bottom: #fff solid 2px;
+        -webkit-border-image: none;
+        -o-border-image: none;
+        border-image: none;
+        border-style: solid;
+        border-width: 1px;
+        color: #555555;
+        cursor: default;
+    }
+
+.nav2 {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
