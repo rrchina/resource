@@ -10,3 +10,5 @@
 .pagings .lb_txtPage{color:#9d9d9d;display:inline-block;height:27px;line-height:25px;border:1px solid #ddd;padding:0 8px;font-size:14px}
 .pagings .lb_txtPage1{margin-left:20px;border-right:0;border-radius:3px 0 0 3px}
 .pagings .lb_txtPage2{border-left:0;}
+.padings .pgpre{border-radius:3px 0 0 3px}
+.padings .pgnext{border-right:1px solid #ddd;border-radius:0 3px 3px 0;}
