@@ -22,13 +22,17 @@ a{color:#333}a:hover,a:focus,.maincolor,.maincolor a{color:#06c}
 .dislpayArrow a{background:url(icon_arrow.png) no-repeat 0 0}
 
 /*added by rex #343A40*/
-.Hui-tabNav{background-color:#e1dede}/*标签栏背景*/
-.navbar{ background:#4b4a4a}/*顶部导航背景*/
-.Hui-aside{background-color:#393838;border-right:1px solid #393838} /*左侧导航背景*/
-.Hui-aside .menu_dropdown > dl > dt{color:#fff;border-bottom:1px solid #686868}/*左侧导航分组*/
+.Hui-tabNav{background-color:#141736;border-color:#333}/*标签栏背景/下框*/
+.Hui-tabNav .acrossTab li{background:#2E3359;color:#fff;border-color:#333}/*标签栏标签/标签边框*/
+.Hui-tabNav .acrossTab li:not(.active):hover{background:#434871}/*标签栏非激活标签hover背景*/
+.Hui-tabNav .acrossTab li.active{color:#000}/*标签栏激活标签文字*/
+
+.navbar{ background:#1F2F49}/*顶部导航背景*/
+.Hui-aside{background-color:#090A1C;border-right:1px solid #393838} /*左侧导航背景*/
+.Hui-aside .menu_dropdown > dl > dt{color:#ddd;border-bottom:1px solid #1D1F3D}/*左侧导航分组*/
 .Hui-aside .menu_dropdown > dl > dt:hover{color:#b6b7b8}
-.Hui-aside .menu_dropdown > dl > dd > ul > li > a{color:#e2dfdf;border-bottom: 1px solid #565555}/*左侧导航菜单*/
-.Hui-aside .menu_dropdown > dl > dd > ul > li > a:hover{color:#b6b7b8;background-color:#817e7e}
+.Hui-aside .menu_dropdown > dl > dd > ul > li > a{color:#ddd;border-bottom: 1px solid #1D1F3D}/*左侧导航菜单*/
+.Hui-aside .menu_dropdown > dl > dd > ul > li > a:hover{color:#b6b7b8;background-color:#1D1F3D}/*左侧导航菜单 经过*/
 .Hui-aside .menu_dropdown > dl > dd > ul > li.current > a,
 .Hui-aside .menu_dropdown > dl > dd > ul > li.current > a:hover{color:#50a0ff;border-left:2px solid #50a0ff}/*左侧导航菜单-选中*/
 .Hui-aside .menu_dropdown dl > dd > ul{padding:3px 0;}
