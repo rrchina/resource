@@ -8,7 +8,7 @@ address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button{overflow: visible;vertical-align:middle;outline:none}
 input[type="submit"],input[type="reset"],input[type="button"],input[type="text"],input[type="password"]{-webkit-appearance:none;outline:none}
-body,th,td,button,input,select,textarea{font-family:"宋体","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
+body,th,td,button,input,select,textarea{font-family:open sans,sans-serif,'Microsoft YaHei',arial,"宋体","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,"WenQuanYi Micro Hei",Verdana,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
 @media ( max-width : 767px) {
 	html{ overflow-y:auto}
 	body,th,td,button,input,select,textarea{ font-size:14px}
@@ -4572,7 +4572,6 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 
 			.Hui-tags-list,
 			.Huitags-list{padding:0 0 10px 0;}
-
 		.Hui-notag,
 		.Huitags-notag{font-size:12px}
 
@@ -4595,7 +4594,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 		.tags7{color:#030; font-weight:bold; font-size:18px}
 		.tags8{color:#F06; font-weight:bold}
 		.tags9{color:#C00; font-weight:bold;font-size:16px}
-	.tags a:hover{color:#F00; text-decoration:underline}
+	.tags a:hover{color:#F00;text-decoration:underline}
 
 	/*4.19.3 tag云标签*/
 	#tagyun {
