@@ -19,6 +19,7 @@ a{color:#333}a:hover,a:focus,.maincolor,.maincolor a{color:#06c}
 .Hui-aside .menu_dropdown > dl > dd > ul > li.current > a:hover{color:#c81623}
 .Hui-aside .menu_dropdown > dl > dt .Hui-iconfont{ color:#a0a7b1}
 .Hui-aside .menu_dropdown > dl > dt .menu_dropdown-arrow{ color:#b6b7b8}	
+.Hui-aside .menu_dropdown .menu-icon{color:#333 !important}
 	.dislpayArrow a{background:url(icon_arrow.png) no-repeat 0 0}
 .tabBar {border-bottom: 2px solid #c81623}
 .tabBar span.current{background-color:#c81623}

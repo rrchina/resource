@@ -31,3 +31,4 @@ a{color:#333}a:hover,a:focus,.maincolor,.maincolor a{color:#ff4a00}
 .Hui-aside .menu_dropdown > dl > dd > ul > li > a:hover{color:#a8360a;background-color:#fff}
 .Hui-aside .menu_dropdown > dl > dd > ul > li.current > a,
 .Hui-aside .menu_dropdown > dl > dd > ul > li.current > a:hover{color:#a09c98;background:#fff}/*左侧导航菜单-选中*/
+.Hui-aside .menu_dropdown .menu-icon{color:#333 !important}
