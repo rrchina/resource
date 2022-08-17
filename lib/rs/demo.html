@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="rutil.min.js"></script>
+    <script src="/lib/rs/rs.js"></script>
+    <script src="../jquery.slimscroll.min.js"></script>
+    <script src="../html2canvas.min.js"></script>
+    <link href="/lib/Hui/lib/Hui-iconfont/1.0.9/iconfont.min.css" rel="stylesheet" />
+    <link href="/lib/rs/rs.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="side-box">
+        <ul>
+            <li>
+                <a>一级<i class="Hui-iconfont Hui-iconfont-arrow2-bottom"></i></a>
+                <ul>
+                    <li>
+                        <a>二级</a>
+                    </li>
+                    <li>
+                        <a>二级</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>一级</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo">logo</a>
+            <nav class="hidden-xs">
+                <ul>
+                    <li><a>首页</a></li>
+                    <li class="dropdown hover">
+                        <a>一级hover <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown hover ani">
+                        <a>一级hover带动画 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>一级click <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级二级二级二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ani">
+                        <a>一级click带动画 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级二级二级二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown hover ani">
+                        <a>自定义 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <div class="menu radius10" style="width:500px;top:100%;height:200px;left:-50px;padding:10px;background:#697df2">
+                            <span style="color:#fff">自定义menu</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="right hidden-xs">
+                <ul>
+                    <li><a>右侧</a></li>
+                    <li class="dropdown hover right">
+                        <a>一级 hover <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级二级二级二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown right">
+                        <a>一级 click <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="menu box-shadow radius">
+                            <li>
+                                <a>二级二级二级二级</a>
+                            </li>
+                            <li>
+                                <a>二级二级 <i class="f-r Hui-iconfont Hui-iconfont-arrow2-right"></i></a>
+                                <ul class="menu box-shadow radius">
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                    <li>
+                                        <a>三级</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav-toggle visible-xs Hui-iconfont Hui-iconfont-menu"></a>
+        </div>
+    </div>
+    <div class="body" style="padding-top:70px">
+        <div class="container-mask"></div>
+        <div style="width:380px;margin:auto;padding-top:10px;padding-bottom:50px">
+            <div class="panel panel-default">
+                <div class="panel-header">tab</div>
+                <div class="panel-body">
+                    <div class="tab tab1">
+                        <div class="tab-header-box">
+                            <span data-val="a" class="tab-header actived">1</span>
+                            <span data-val="b" class="tab-header">2</span>
+                            <span data-val="c" class="tab-header">3</span>
+                        </div>
+                        <div class="tab-content-box">
+                            <div class="tab-content actived">11</div>
+                            <div class="tab-content">22</div>
+                            <div class="tab-content">33</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">tab reverse</div>
+                <div class="panel-body">
+                    <div class="tab reverse">
+                        <div class="tab-header-box">
+                            <span class="tab-header actived">1</span>
+                            <span class="tab-header">2</span>
+                            <span class="tab-header">3</span>
+                        </div>
+                        <div class="tab-content-box">
+                            <div class="tab-content actived">11</div>
+                            <div class="tab-content">22</div>
+                            <div class="tab-content">33</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">tab-vertical</div>
+                <div class="panel-body">
+                    <div class="tab v">
+                        <div class="tab-header-box">
+                            <span class="tab-header actived">美食</span>
+                            <span class="tab-header">运动</span>
+                            <span class="tab-header">服装</span>
+                        </div>
+                        <div class="tab-content-box">
+                            <div class="tab-content actived">11</div>
+                            <div class="tab-content">22</div>
+                            <div class="tab-content">33</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">list</div>
+                <div class="panel-body">
+                    <div class="list radius" style="border-color:#ddd">
+                        <div class="list-item">
+                            <span class="list-item-content">新闻1</span> <i class="Hui-iconfont Hui-iconfont-arrow2-right"></i>
+                        </div>
+                        <div class="list-item">
+                            <span class="list-item-content">新闻2</span> <i class="Hui-iconfont Hui-iconfont-arrow2-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">input</div>
+                <div class="panel-body" id="testform">
+                    <div class="input-row">
+                        <span class="input-label">姓名:</span>
+                        <input type="text" vrf required class="input-text xs radius" placeholder="xs" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">姓名:</span>
+                        <input type="text" vrf required class="input-text s radius" placeholder="s" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">邮箱:</span>
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text radius" placeholder="default" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">邮箱:</span>
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text l radius" placeholder="l" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">城市:</span>
+                        <select vrf required class="input-text radius">
+                            <option value="">请选择</option>
+                            <option value="成都">成都</option>
+                            <option value="成都">南充</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">邮箱:</span>
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text bordered radius" placeholder="bordered" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">城市:</span>
+                        <select class="input-text radius" disabled>
+                            <option value="">disabled</option>
+                            <option value="成都">成都</option>
+                            <option value="成都">南充</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">邮箱:</span>
+                        <input type="text" class="input-text bordered radius" value="i@cometo.top" disabled placeholder="bordered" />
+                    </div>
+                    <div class="pd-10">
+                        <a class="btn btn-primary block radius box-shadow" onclick="if (!$('#testform').checkInput()) { showMsg('填写有误')}">保存</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">button</div>
+                <div class="panel-body">
+                    <a class="btn btn-primary xs">button xs</a> <a class="btn btn-primary s">button s</a> <a class="btn btn-primary">default</a>  <a class="btn btn-primary l">button l</a><br /><br />
+                    <a class="btn btn-primary radius">Button</a> <a class="btn btn-danger radius"><i class="Hui-iconfont Hui-iconfont-upload"></i> Upload</a>
+                    <br /><br />
+                    <a class="btn btn-default radius">Button</a> <a class="btn btn-default radius"><i class="Hui-iconfont Hui-iconfont-upload"></i> Upload</a><br /><br />
+
+                    <div class="btn-group">
+                        <span class="btn btn-default radius">Button1</span>
+                        <span class="btn btn-default dropdown ani hover radius">
+                            <a>Button2 <i class="Hui-iconfont Hui-iconfont-arrow2-bottom"></i></a>
+                            <ul class="menu radius">
+                                <li><a>a</a></li>
+                                <li><a>b</a></li>
+                            </ul>
+                        </span>
+                        <span class="btn btn-default radius">Button3</span>
+                    </div>
+                    <br />
+                    <div class="btn-group flex">
+                        <span class="btn btn-default radius">Button1</span>
+                        <span class="btn btn-default dropdown hover radius">
+                            <a>Button2 <i class="Hui-iconfont Hui-iconfont-arrow2-bottom"></i></a>
+                            <ul class="menu">
+                                <li><a>a</a></li>
+                                <li><a>b</a></li>
+                            </ul>
+                        </span>
+                        <span class="btn btn-default radius">Button3</span>
+                    </div>
+                    <br />
+                    <div class="btn-group flex">
+                        <span class="btn btn-primary-outline radius">Button1</span>
+                        <span class="btn btn-default-outline dropdown radius">
+                            <a>Button2 <i class="Hui-iconfont Hui-iconfont-arrow2-bottom"></i></a>
+                            <ul class="menu radius">
+                                <li><a>a</a></li>
+                                <li><a>b</a></li>
+                            </ul>
+                        </span>
+                        <span class="btn btn-primary radius">Button3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">label</div>
+                <div class="panel-body">
+                    <label class="label label-primary radius">1</label>
+                    <label class="label label-secondary radius">1</label>
+                    <label class="label label-success radius">1</label>
+                    <label class="label label-warning radius">1</label>
+                    <label class="label label-danger radius">1</label>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">number</div>
+                <div class="panel-body">
+                    <span class="t">选择数量</span>：
+                    <div class="number radius">
+                        <div class="number-box">
+                            <!--小数把integer改成number-->
+                            <a class="minus">-</a><input type="text" value="1" readonly vrf integer min="1" max="5" step="1" /><a class="plus">+</a>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <span class="t">选择数量</span>：
+                    <div class="number disabled radius">
+                        <div class="number-box">
+                            <!--小数把integer改成number-->
+                            <span class="minus">-</span><input type="text" value="1" readonly vrf integer min="1" max="5" step="1" /><span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">table</div>
+                <div class="panel-body">
+                    <table class="table table-border table-bordered table-striped radius box-shadow">
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>年龄</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>张三</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>李四</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>张三</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>李四</td>
+                                <td>33</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">alert</div>
+                <div class="panel-body">
+                    <div class="alert alert-success">
+                        你好！<i class="close"></i>
+                    </div>
+                    <div class="alert alert-danger">
+                        Bonjour！<i class="close"></i>
+                    </div>
+                    <div class="alert alert-error">
+                        你好！<i class="close"></i>
+                    </div>
+                    <div class="alert alert-info">
+                        Bonjour！<i class="close"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">marquee</div>
+                <div class="panel-body">
+                    <div style="border:1px solid #ddd;height:40px;line-height:40px" class="radius pl-10 pr-10">
+                        <div id="aa" style="height:38px;overflow:hidden" class="">
+                            <div>
+                                <a style="display:block;line-height:38px;height:38px">
+                                    公告1
+                                </a>
+                                <a style="display:block;line-height:38px;height:38px">
+                                    公告2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">scroll menu</div>
+                <div class="panel-body">
+                    <div class="scroll-menu" id="mymenu">
+                        <ul>
+                            <li data-id="11" class="actived">数码</li>
+                            <li data-id="22">服装</li>
+                            <li data-id="33">美妆</li>
+                            <li data-id="44">运动</li>
+                            <li data-id="55">美食</li>
+                            <li data-id="66">户外</li>
+                            <li data-id="77">图书</li>
+                            <li data-id="88">数码</li>
+                            <li data-id="99">服装</li>
+                            <li data-id="A0">美妆</li>
+                            <li data-id="A1">运动</li>
+                            <li data-id="A2">美食</li>
+                            <li data-id="A3">户外</li>
+                            <li data-id="A4">图书</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">switch</div>
+                <div class="panel-body">
+                    <div class="pb-10">
+                        <span class="t">def</span>
+                        <div id="switch1" class="switch">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.zh</span>
+                        <div class="switch zh">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch zh actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch zh disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch zh disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.yesno</span>
+                        <div class="switch yesno">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.yesno .zh</span>
+                        <div class="switch yesno zh">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno zh actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno zh disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yesno zh disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.yn</span>
+                        <div class="switch yn">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yn zh actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yn zh disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch yn zh disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.s</span>
+                        <div class="switch s">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch s actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch s disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch s disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    <div class="pb-10">
+                        <span class="t">.xs</span>
+                        <div class="switch xs">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch xs actived box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch xs disabled  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                        <div class="switch xs disabled actived  box-shadow">
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">bbox</div>
+                <div class="panel-body">
+                    <a href="javascript:;" id="bbox">bbox</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="toimg">dom to image</a>
+    <div class="scroll-trigger" data-threshold="-20" id="test1">
+        滚动到离底部下方200px时触发scroll.in
+    </div>
+    <div class="scroll-trigger" data-threshold="-21" id="test2">
+        滚动到离底部下方100px时触发scroll.in
+    </div>
+    <script>
+        $(function () {
+            $(document).on('change.tab', '.tab1', function (e) {
+                console.log(e.detail.oldIdx, e.detail.newIdx, e.detail.data.val)
+            })
+            $('#mymenu').on('change.menu', function (e) {
+                console.log(e.detail.oldIdx, e.detail.newIdx, e.detail.data.id)
+            })
+            $('#aa').marquee();
+            $('#switch1').on('change', function (e) {
+                console.log(e.detail.on)
+            })
+            $(document).on('scroll.in', '.scroll-trigger', function (e) {
+                console.log($(this).attr('id') + "进入");
+            }).on('scroll.out', '.scroll-trigger', function (e) {
+                console.log($(this).attr('id') + "退出");
+            }).on('click', '#bbox', function () {
+                $.bbox({
+                    title: "hi", content: "hello<br/>这是底部弹出窗口",
+                    buttons: {
+                        "不关闭": {
+                            action: function () {
+                                showMsg("return false 不会关闭");
+                                return false
+                            }
+                        }, "cust style": {
+                            style: "background:blue;color:#fff",
+                            action() {
+                                showMsg('自定义按钮样式')
+                            }
+                        }, "默认最后一个按钮颜色": {
+                            action() {
+                                showMsg('ok')
+                            }
+                        }
+                    }
+                })
+            }).on('click', '#toimg', function () {
+                //domtoimage.toJpeg($('body')[0]).then(function (dataUrl) {
+                //    $('body').append('<img src="'+dataUrl+'">')
+                //});
+                //html2canvas($('body')[0], {width:200,height:300}).then(function (canvas) {
+                //        var dataUrl = canvas.toDataURL('image/jpeg', 1.0); //将图片转为base64, 0-1 表示清晰度
+                //        $('body').append('<img src="' + dataUrl + '">')
+                //    })
+            });
+        })
+    </script>
+</body>
+</html>
