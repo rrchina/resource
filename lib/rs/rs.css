@@ -215,6 +215,7 @@ p{margin-bottom:0.5em}
 
 /*--input--*/
 .input-row{background:#fff;box-sizing:border-box;display: flex;align-items: center;padding:5px;border-bottom:1px solid #e8e8e8}
+.input-row.transp{background:transparent}
 .input-label{vertical-align:middle;width:24%;flex-shrink:0;word-break: keep-all;white-space:nowrap;padding:0 5px;color:#8a8a8a;font-size:14px}
 .input-label-right{width:10%;word-break: keep-all;white-space:nowrap;padding:0 5px;color:#8a8a8a}
 .input-label.r{text-align: right;}
@@ -630,9 +631,9 @@ table th{text-align:left; font-weight:bold}
 .confirmbox-mask{z-index:60000000;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5)}
 .confirmbox-container{width:90%;height:100%;max-width:767px;margin:auto;display:flex;justify-content:center;align-items:center}
 .confirmbox{width:100%;overflow:hidden;background:#fff;border-radius:6px;box-shadow:-1px -1px 4px rgba(0,0,0,0.1)}
-.confirmbox-header{height:55px;display:flex;align-items:center;padding:0 15px;font-size:16px;font-weight:bold;border-bottom:1px solid #eee;}
+.confirmbox-header{height:50px;display:flex;align-items:center;padding:0 15px;font-size:16px;font-weight:bold;border-bottom:1px solid #eee;}
 .confirmbox-body{overflow:auto;padding:10px;max-height:70vh;word-break:break-all;word-wrap:break-word}
-.confirmbox-footer{height:55px;display:flex;border-top:1px solid #eee}
+.confirmbox-footer{height:50px;display:flex;border-top:1px solid #eee}
 .confirmbox-btn{color:#000;flex-shrink:1;flex-grow:1;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:16px;transition:all .5s}
 .confirmbox-btn:hover{background:#eee}
 .confirmbox-btn:last-child{color:#857cfb;}
