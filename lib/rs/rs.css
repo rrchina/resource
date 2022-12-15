@@ -129,7 +129,7 @@ p{margin-bottom:0.5em}
 .menu>li:last-child{border-bottom:none}
 .menu>li>.menu{display:none;left:100%;top:-1px;}
 .menu>li>a{line-height:1.8;padding:10px 20px;display:block;text-decoration:none;white-space:nowrap;color:#000;transition:all .3s ease-out}
-.menu.radius{border-radius:8px;border-top-left-radius:0;border-top-right-radius:0}
+.menu.radius{border-radius:0 0 8px 8px;}
 .menu>li:hover>a{background:#ede9e9;color:#06c}
 .menu>li:hover>.menu{display:block}
 
@@ -151,6 +151,11 @@ p{margin-bottom:0.5em}
 
 .dropdown{position:relative;transition:all 0.5s ease-out}
 .dropdown>.menu{display:none;position:absolute;left:0;top:100%;min-width:100%;}
+.btn.dropdown>.menu{top:calc(100% + 1px)}
+.dropdown.up>.menu{display:none;position:absolute;left:0;top:auto;bottom:calc(100% + 1px);min-width:100%;}
+.btn.dropdown.up>.menu{bottom:calc(100% + 1px)}
+.dropdown.up>.menu.radius{border-radius:8px 8px 0 0}
+
 .dropdown.right>.menu{left:auto;right:0;}	
 /*.dropdown:hover,.dropdown:not(.btn).open{background-color:rgba(255,255,255,0.2)}*/
 .dropdown:not(.btn).open{background-color:rgba(255,255,255,0.2)}
@@ -585,10 +590,10 @@ table th{text-align:left; font-weight:bold}
 /*----bbox-----*/
 .bbox-mask{z-index:50;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5)}
 .bbox-container{width:100%;height:100%;max-width:767px;margin:auto;position:relative}
-.bbox{position:absolute;bottom:0;left:0;right:0px;background:#fff;border-radius:6px 6px 0 0;box-shadow:-1px -1px 4px rgba(0,0,0,0.1)}
-.bbox-header{height:55px;display:flex;align-items:center;padding:0 15px;font-size:16px;font-weight:bold;border-bottom:1px solid #eee}
+.bbox{position:absolute;bottom:0;left:0;right:0px;background:#fff;border-radius:6px 6px 0 0;box-shadow:-1px -1px 4px rgba(0,0,0,0.1);overflow:hidden}
+.bbox-header{height:45px;display:flex;align-items:center;padding:0 15px;font-size:15px;font-weight:bold;border-bottom:1px solid #eee;background:#f8f8f8}
 .bbox-body{overflow:auto;padding:10px;max-height:70vh}
-.bbox-footer{height:55px;display:flex;border-top:1px solid #eee}
+.bbox-footer{height:50px;display:flex;border-top:1px solid #eee}
 .bbox-btn{color:#000;flex-shrink:1;flex-grow:1;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:16px;transition:all .5s}
 .bbox-btn:hover{background:#eee}
 .bbox-btn:last-child{color:#857cfb;}
@@ -641,7 +646,7 @@ table th{text-align:left; font-weight:bold}
 .action-mask{z-index:59000000;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5)}
 .actionbox-container{width:90%;height:100%;max-width:767px;margin:auto;position:relative}
 .actionbox{width:100%;position:absolute;left:0;bottom:20px}
-.actionbox-header{height:45px;display:flex;align-items:center;justify-content:center;padding:0 15px;font-size:16px;font-weight:bold;background:#ddd;border-radius:5px;background:#fff;color:#8a8a8a}
+.actionbox-header{height:45px;display:flex;align-items:center;justify-content:center;padding:0 15px;font-size:15px;font-weight:bold;background:#ddd;border-radius:5px;background:#fff;color:#8a8a8a}
 .actionbox-body{padding-top:8px}
 .actionbox-btn{height:45px;line-height:45px;display:block;text-align:center;background:#e9e9e9;overflow:hidden;font-size:16px;color:#857cfb;transition:all .5s}
 .actionbox-body .actionbox-btn{border-bottom:1px solid #d6d6d6}
@@ -698,5 +703,17 @@ table th{text-align:left; font-weight:bold}
 .ani-slideup{animation:slideup .25s ease-out}
 @keyframes slideup{
     0%{opacity:0;transform:translateY(75px)}
+    100%{opacity:1;transform:translateY(0px)}
+}
+.ani-bounceinB{animation:bounceinB .4s ease-out;animation-fill-mode:backwards}
+@keyframes bounceinB{
+    0%{opacity:0;transform:translateY(50px)}
+    60%{opacity:0.4;transform:translateY(-15px)}
+    80%{opacity:0.8;transform:translateY(10px)}
+    100%{opacity:1;transform:translateY(0px)}
+}
+.ani-slidedown{animation:slidedown .25s ease-out}
+@keyframes slidedown{
+    0%{opacity:0;transform:translateY(-75px)}
     100%{opacity:1;transform:translateY(0px)}
 }

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="/lib/rs/iconfont/iconfont.min.css" rel="stylesheet" />
-    <link href="/lib/rs/rs.css" rel="stylesheet" />
+    <link href="/lib/rs/rs.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="side-box">
@@ -251,27 +251,27 @@
                 <div class="panel-body" id="testform">
                     <div class="input-row">
                         <span class="input-label">姓名:</span>
-                        <input type="text" vrf required class="input-text xs radius" placeholder="xs" />
+                        <input type="text" vrf required class="input-text xs" placeholder="xs" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">姓名:</span>
-                        <input type="text" vrf required class="input-text s radius" placeholder="s" />
+                        <input type="text" vrf required class="input-text s" placeholder="s" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">邮箱:</span>
-                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text radius" placeholder="default" />
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text" placeholder="default" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">邮箱:</span>
-                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text l radius" placeholder="l" />
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text l" placeholder="l" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">邮箱:</span>
-                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text xl radius" placeholder="xl" />
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text xl" placeholder="xl" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">城市:</span>
-                        <select vrf required class="input-text radius">
+                        <select vrf required class="input-text">
                             <option value="">请选择</option>
                             <option value="成都">成都</option>
                             <option value="成都">南充</option>
@@ -279,11 +279,11 @@
                     </div>
                     <div class="input-row">
                         <span class="input-label">邮箱:</span>
-                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text bordered radius" placeholder="bordered" />
+                        <input type="text" vrf required regex="^[a-z0-9._-]{1,20}\@+[a-z0-9]{1,20}\.[a-z]{2,5}$" class="input-text bordered" placeholder="bordered" />
                     </div>
                     <div class="input-row">
                         <span class="input-label">城市:</span>
-                        <select class="input-text radius" disabled>
+                        <select class="input-text" disabled>
                             <option value="">disabled</option>
                             <option value="成都">成都</option>
                             <option value="成都">南充</option>
@@ -291,7 +291,11 @@
                     </div>
                     <div class="input-row">
                         <span class="input-label">邮箱:</span>
-                        <input type="text" class="input-text bordered radius" value="i@cometo.top" disabled placeholder="bordered" />
+                        <input type="text" class="input-text bordered" vrf required value="i@cometo.top" disabled placeholder="bordered" />
+                    </div>
+                    <div class="input-row">
+                        <span class="input-label">邮箱:</span>
+                        <input type="text" class="input-text bordered radius" vrf required regex="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" value="" placeholder="radius" />
                     </div>
                     <div class="pd-10">
                         <a class="btn btn-primary block radius box-shadow" onclick="if (!$('#testform').checkInput()) { showMsg('填写有误')}">保存</a>
@@ -707,7 +711,21 @@
                     <div class="progress" data-value="0.7">
                         <div class="handle"></div>
                     </div>
-                    <a class="btn btn-primary radius mt-10" id="btn-progress">改变进度</a>
+                    <a class="btn btn-primary radius mt-10" id="btn-progress">随机进度</a>
+                </div>
+            </div>
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">confirm/alert</div>
+                <div class="panel-body">
+                    <a id="alert1" class="btn btn-primary radius">默认</a>
+                    <br /><br />
+                    <a id="alert2" class="btn btn-primary radius">自定义</a>
+                </div>
+            </div>
+            <div class="panel panel-default mt-5">
+                <div class="panel-header">action/actionSheet</div>
+                <div class="panel-body">
+                    <a id="action1" class="btn btn-primary radius">action sheet</a>
                 </div>
             </div>
         </div>

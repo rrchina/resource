@@ -9,6 +9,7 @@ aside .accordion,aside .accordion dd,aside .list{padding:0}
 aside .accordion dt{padding:12px}
 aside .accordion dt,aside .accordion dd{border-color:#1D1F3D}
 aside .accordion *{color:#ddd}
+aside .accordion dt.open{background:rgba(0,0,0,0.05)}
 
 .pages{position:absolute;left:200px;top:60px;right:0;bottom:0;overflow:auto;transition:all .2s}
 .page-tag{background:#141736;display:flex;height:40px;padding:8px 8px 0 4px}
