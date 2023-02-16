@@ -252,10 +252,10 @@ textarea.input-text{line-height:1.5;padding-top:5px;padding-bottom:5px}
 			transition:background-color .1s linear}
 .btn.block{display:block}
 .btn,.btn.m{height:36px;line-height:36px;padding:0px 10px;font-size:14px}
-.btn.xs{ height:24px;line-height:24px;padding:0px 4px;font-size:12px}
-.btn.s{ height:30px;line-height:30px;padding:0px 4px;font-size:12px}
-.btn.l{ height:40px;line-height:40px;padding:0px 16px;font-size:16px}
-.btn.xl{ height:50px;line-height:50px;padding:0px 16px;font-size:16px}
+.btn.xs{ height:24px;line-height:22px;padding:0px 4px;font-size:12px}
+.btn.s{ height:30px;line-height:28px;padding:0px 4px;font-size:12px}
+.btn.l{ height:40px;line-height:38px;padding:0px 16px;font-size:16px}
+.btn.xl{ height:50px;line-height:28px;padding:0px 16px;font-size:16px}
 
 a.btn:hover,a.btn:focus,a.btn:active,a.btn.active,a.btn.disabled,a.btn[disabled]{text-decoration:none}
 .btn:active,.btn.active{background-color:#ccc}
@@ -592,7 +592,10 @@ table th{text-align:left; font-weight:bold}
 .bbox-container{width:100%;height:100%;max-width:767px;margin:auto;position:relative}
 .bbox{position:absolute;bottom:0;left:0;right:0px;background:#fff;border-radius:6px 6px 0 0;box-shadow:-1px -1px 4px rgba(0,0,0,0.1);overflow:hidden}
 .bbox-header{height:45px;display:flex;align-items:center;padding:0 15px;font-size:15px;font-weight:bold;border-bottom:1px solid #eee;background:#f8f8f8}
-.bbox-body{overflow:auto;padding:10px;max-height:70vh}
+.bbox-body{overflow:auto;padding:10px;max-height:80vh}
+.bbox-body::-webkit-scrollbar{width:4px}
+.bbox-body::-webkit-scrollbar-thumb{border-radius: 8px;background: rgba(0,0,0,0.2);}
+.bbox-body::-webkit-scrollbar-track{border-radius: 0;background: rgba(0,0,0,0.1);}
 .bbox-footer{height:50px;display:flex;border-top:1px solid #eee}
 .bbox-btn{color:#000;flex-shrink:1;flex-grow:1;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:16px;transition:all .5s}
 .bbox-btn:hover{background:#eee}
@@ -624,6 +627,9 @@ table th{text-align:left; font-weight:bold}
 .checkbox.block:before{float:left}
 /*-cascade-*/
 .cascade{user-select:none}
+.cascade .list-box::-webkit-scrollbar{width:4px}
+.cascade .list-box::-webkit-scrollbar-thumb{border-radius: 8px;background: rgba(0,0,0,0.2);}
+.cascade .list-box::-webkit-scrollbar-track{border-radius: 0;background: rgba(0,0,0,0.1);}
 .cascade .list .list-item{padding-left:10px;padding-right:10px}
 .cascade .list .list-item.actived{background:#8487fa;color:#fff;font-size:16px}
 /*-line title-*/
